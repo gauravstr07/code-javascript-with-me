@@ -1,19 +1,37 @@
-let num = [5, 10, 15, 20, 25, 50];
+let num = [1, 2, 3, 4, 5, 6, 7];
+console.log(num);
 
-let b = num.toString(); // b is now string
-//console.log(b);
+let num_more = [8, 9, 10, 11, 12, 13, 14];
 
-let c = num.join("_"); // join 2 array
-//console.log(c);
+let forsort = [2, , 3, 1, 4, 6, 5, 7];
 
-let pop = num.pop(); // pop used for removing last elememt of an array
-//console.log(num, pop);
+// delete num[0]  // delete removing the element of an array which you want, but can not delete lenght of an array, it will be constant
+//console.log(num);
 
-let push = num.push(56); // adding element to the last index
-//console.log(num, push);
+/** concat method adding 2 arrays into one array similar like join */
+//let newArray = num.concat(num_more);
+//console.log(newArray);
 
-let shift = num.shift(); // removing first element of an array
-//console.log(num, shift);
+/** sort method used to sort array to alphabetically */
+// let compare = (a, b) => {
+//   return b - a;
+// };
 
-let unShift = num.unshift("Gau"); // adding element to the first index of an array
-console.log(num, unShift);
+// let sort = forsort.sort(compare);
+//console.log(forsort);
+
+/** reverce method reversing to to the array */
+// let reverce = forsort.reverse();
+//console.log(forsort);
+
+/** Splice and Slice */
+
+/** Splice can be used to add new items to an array */
+//let splice = num.splice(0, 3, 20, 30, 40);
+//console.log(num);
+
+/** Slice out a piece from an arry it create a new array */
+let slice = num.slice(1);
+console.log(slice);
+
+
